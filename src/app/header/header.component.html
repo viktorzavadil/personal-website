@@ -3,8 +3,19 @@
     <img class="logo" src="assets/logo.svg" alt="Logo">
   </a>
   <span class="spacer"></span>
-  <nav>
-    <a class="menu-button" mat-stroked-button routerLink="/home" routerLinkActive="mat-flat-button">Home</a>
-    <a class="menu-button"  mat-stroked-button routerLink="/contact" routerLinkActive="mat-flat-button">Contact</a>
+  <nav class="menu-nav-bar">
+    <a class="menu-link" mat-stroked-button routerLink="/home" routerLinkActive="mat-flat-button">Home</a>
+    <a class="menu-link" mat-stroked-button routerLink="/contact" routerLinkActive="mat-flat-button">Contact</a>
   </nav>
+  <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/home">
+      Home
+    </button>
+    <button mat-menu-item routerLink="/contact">
+      Contact
+    </button>
+  </mat-menu>
 </mat-toolbar>

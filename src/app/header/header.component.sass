@@ -3,11 +3,21 @@ mat-toolbar
     flex: 1 1 auto
 
   &.header-toolbar
-    .menu-button
-      margin: 0 4px
-
     .logo-link
       height: 40px
 
     .logo
       height: 40px
+
+    .menu-nav-bar
+      display: none
+
+      .menu-link
+        margin: 0 4px
+
+    @media (min-width: 768px)
+      .menu-nav-bar
+        display: block
+
+      .menu-button
+        display: none

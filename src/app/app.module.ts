@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MetarCardComponent } from './metar-card/metar-card.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MetarCardComponent } from './metar-card/metar-card.component';
     MatListModule,
     MatCardModule,
     ClipboardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
