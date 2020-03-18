@@ -1,0 +1,38 @@
+<mat-card class="metar-card">
+  <mat-card-header>
+    <mat-card-title>METAR weather information</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Raw data
+        </mat-panel-title>
+        <mat-panel-description>
+          Would you like to see raw data?
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <pre>{{raw}}</pre>
+
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          What is METAR?
+        </mat-panel-title>
+        <!--mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description-->
+      </mat-expansion-panel-header>
+
+      <p>
+        METAR is a format for reporting weather information. A METAR weather report is predominantly used by aircraft
+        pilots, and by meteorologists, who use aggregated METAR information to assist in weather forecasting. Raw
+        METAR is the most common format in the world for the transmission of observational weather data.
+      </p>
+
+    </mat-expansion-panel>
+  </mat-card-content>
+</mat-card>
