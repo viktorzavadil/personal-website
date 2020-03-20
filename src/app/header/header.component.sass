@@ -6,8 +6,20 @@ mat-toolbar
     .logo-link
       height: 40px
 
-    .logo
-      height: 40px
+      .logo
+        display: none
+        height: 40px
+
+      .logo-short
+        height: 40px
+
+      @media (min-width: 400px)
+        .logo
+          display: block
+
+        .logo-short
+          display: none
+
 
     .menu-nav-bar
       display: none
